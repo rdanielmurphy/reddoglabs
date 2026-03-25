@@ -2,9 +2,9 @@
 
 **Small Studio. Big Ideas.**
 
-Red Dog Labs is an indie app studio building useful, well-crafted tools. Home of [BillStack](https://reddoglabs.com/#apps) and more.
+Red Dog Labs is an indie app studio building useful, well-crafted tools. Home of [BillStack](https://reddoglabs.co/#apps) and more.
 
-🔗 **[reddoglabs.com](https://reddoglabs.com)**
+🔗 **[reddoglabs.co](https://reddoglabs.co)**
 
 ## About
 
