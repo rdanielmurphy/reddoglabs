@@ -25,7 +25,14 @@ This is the marketing site for Red Dog Labs — a static site deployed on Netlif
 ├── style.css        # Styles
 ├── main.js          # Interactions (nav toggle, animations)
 ├── favicon.svg      # Site icon
-└── netlify.toml     # Netlify config (headers, redirects)
+├── netlify.toml     # Netlify config (headers, redirects)
+└── billstack/       # BillStack app marketing site
+    ├── index.html
+    ├── styles.css
+    ├── main.js
+    ├── favicon.svg
+    ├── privacy.html
+    └── terms.html
 ```
 
 ## Development

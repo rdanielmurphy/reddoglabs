@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BillStack — Stack your invoices. Track your money.</title>
+  <meta name="description" content="BillStack is the easiest way to create invoices, estimates, and track payments from your phone. Professional PDFs, income analytics, and client management — all in one app.">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/billstack/" class="nav__logo" aria-label="BillStack home">
+        <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12" y="22" width="40" height="34" rx="4" fill="#345ca8" opacity="0.35"/>
+          <rect x="8" y="14" width="40" height="34" rx="4" fill="#345ca8" opacity="0.6"/>
+          <rect x="4" y="6" width="40" height="34" rx="4" fill="#345ca8"/>
+          <path d="M14 18h20M14 24h16M14 30h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M34 28l3 3 6-7" stroke="#2ecc71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="nav__logo-text">BillStack</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#download" class="btn btn--small btn--accent">Download</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Stack your invoices.<br><span class="hero__title--accent">Track your money.</span></h1>
+        <p class="hero__subtitle">Create professional invoices &amp; estimates, track payments, and manage your business finances — all from your phone.</p>
+        <div class="hero__cta">
+          <a href="#download" class="btn btn--accent btn--large">Get BillStack Free</a>
+          <a href="#features" class="btn btn--outline btn--large">See Features</a>
+        </div>
+        <div class="hero__badges" id="download">
+          <a href="#" class="badge" aria-label="Download on the App Store">
+            <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="135" height="40" rx="6" fill="#000"/>
+              <text x="67.5" y="16" text-anchor="middle" fill="#fff" font-size="8" font-family="system-ui, sans-serif">Download on the</text>
+              <text x="67.5" y="29" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="system-ui, sans-serif">App Store</text>
+            </svg>
+          </a>
+          <a href="#" class="badge" aria-label="Get it on Google Play">
+            <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="135" height="40" rx="6" fill="#000"/>
+              <text x="67.5" y="16" text-anchor="middle" fill="#fff" font-size="8" font-family="system-ui, sans-serif">GET IT ON</text>
+              <text x="67.5" y="29" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Google Play</text>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__phone">
+          <div class="phone-mock">
+            <div class="phone-mock__screen">
+              <div class="phone-mock__status-bar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="phone-mock__header">
+                <span class="phone-mock__app-name">BillStack</span>
+                <span class="phone-mock__balance">$12,480.00</span>
+                <span class="phone-mock__label">Revenue this month</span>
+              </div>
+              <div class="phone-mock__cards">
+                <div class="phone-mock__card phone-mock__card--paid">
+                  <div class="phone-mock__card-row">
+                    <span>INV-0042</span>
+                    <span class="phone-mock__tag phone-mock__tag--paid">Paid</span>
+                  </div>
+                  <div class="phone-mock__card-row">
+                    <span class="phone-mock__client">Acme Corp</span>
+                    <span class="phone-mock__amount">$3,200.00</span>
+                  </div>
+                </div>
+                <div class="phone-mock__card phone-mock__card--pending">
+                  <div class="phone-mock__card-row">
+                    <span>INV-0043</span>
+                    <span class="phone-mock__tag phone-mock__tag--pending">Pending</span>
+                  </div>
+                  <div class="phone-mock__card-row">
+                    <span class="phone-mock__client">Starter Labs</span>
+                    <span class="phone-mock__amount">$1,850.00</span>
+                  </div>
+                </div>
+                <div class="phone-mock__card phone-mock__card--estimate">
+                  <div class="phone-mock__card-row">
+                    <span>EST-0018</span>
+                    <span class="phone-mock__tag phone-mock__tag--estimate">Estimate</span>
+                  </div>
+                  <div class="phone-mock__card-row">
+                    <span class="phone-mock__client">Nova Design</span>
+                    <span class="phone-mock__amount">$5,400.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">Everything you need to get paid</h2>
+        <p class="section-header__subtitle">From estimates to invoices to payments — BillStack handles your entire billing workflow.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="feature-card__title">Invoices &amp; Estimates</h3>
+          <p class="feature-card__desc">Create professional invoices and estimates in seconds. Customize with your logo, terms, and line items.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="feature-card__title">Track Payments</h3>
+          <p class="feature-card__desc">Mark invoices as paid, partially paid, or overdue. Always know exactly where your money stands.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3 class="feature-card__title">Down Payments</h3>
+          <p class="feature-card__desc">Request deposits on estimates before starting work. Protect your time and cash flow.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          </div>
+          <h3 class="feature-card__title">Estimate → Invoice</h3>
+          <p class="feature-card__desc">Convert approved estimates to invoices with one tap. No re-entering data, no mistakes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3 class="feature-card__title">Generate &amp; Send PDFs</h3>
+          <p class="feature-card__desc">One tap to generate a polished PDF and send it directly to your client via email or messaging.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3 class="feature-card__title">Income Analytics</h3>
+          <p class="feature-card__desc">Visual charts and reports that show your income trends, top clients, and monthly breakdowns.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="feature-card__title">Client Management</h3>
+          <p class="feature-card__desc">Keep a clean directory of clients with contact info, history, and outstanding balances at a glance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#345ca8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h3 class="feature-card__title">Product Catalog</h3>
+          <p class="feature-card__desc">Save your products and services with preset prices. Add them to invoices instantly — no retyping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">Simple, honest pricing</h2>
+        <p class="section-header__subtitle">Start free. Upgrade when you're ready.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Free</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$0</span>
+              <span class="pricing-card__period">forever</span>
+            </div>
+            <p class="pricing-card__desc">Everything you need to get started</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Unlimited invoices &amp; estimates</li>
+            <li>Email invoices &amp; estimates</li>
+            <li>PDF generation <em>(with watermark)</em></li>
+            <li>Payment tracking</li>
+            <li>Client management</li>
+            <li>Income charts</li>
+            <li>Product &amp; service catalog</li>
+          </ul>
+          <a href="#download" class="btn btn--outline btn--block">Get Started</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__badge">Most Popular</div>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Pro Monthly</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$2.99</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <p class="pricing-card__desc">Go professional, no watermarks</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Everything in Free</li>
+            <li>Clean PDFs — <strong>no watermark</strong></li>
+            <li>Priority customer support</li>
+          </ul>
+          <a href="#download" class="btn btn--accent btn--block">Get Pro</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Pro Yearly</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">$29.99</span>
+              <span class="pricing-card__period">/year</span>
+            </div>
+            <p class="pricing-card__desc">Save ~17% vs monthly</p>
+          </div>
+          <ul class="pricing-card__features">
+            <li>Everything in Pro Monthly</li>
+            <li>Clean PDFs — <strong>no watermark</strong></li>
+            <li>Priority customer support</li>
+            <li><strong>Save $5.89/year</strong></li>
+          </ul>
+          <a href="#download" class="btn btn--outline btn--block">Get Pro Yearly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/billstack/" class="nav__logo" aria-label="BillStack home">
+          <svg class="nav__logo-icon" width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="22" width="40" height="34" rx="4" fill="#345ca8" opacity="0.35"/>
+            <rect x="8" y="14" width="40" height="34" rx="4" fill="#345ca8" opacity="0.6"/>
+            <rect x="4" y="6" width="40" height="34" rx="4" fill="#345ca8"/>
+            <path d="M14 18h20M14 24h16M14 30h12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M34 28l3 3 6-7" stroke="#2ecc71" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="nav__logo-text">BillStack</span>
+        </a>
+        <p class="footer__tagline">Stack your invoices. Track your money.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#download">Download</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="/billstack/privacy.html">Privacy Policy</a>
+          <a href="/billstack/terms.html">Terms of Service</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="mailto:hello@reddoglabs.co">Support</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 BillStack. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
