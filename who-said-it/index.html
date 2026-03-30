@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who Said It? — Bible, Philosopher, or Fortune Cookie?</title>
+  <meta name="description" content="A fun quiz game that challenges you to guess whether a quote came from the Bible, a famous philosopher, or a fortune cookie. Can you tell the difference?">
+  <meta name="theme-color" content="#1a1a2e">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/who-said-it/" class="nav__logo" aria-label="Who Said It? home">
+        <span class="nav__logo-icon">📖</span>
+        <span class="nav__logo-text">Who Said It?</span>
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#categories">Categories</a>
+        <a href="#download" class="btn btn--small btn--accent">Download</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">Can you tell <br><span class="hero__title--accent">who said it?</span></h1>
+        <p class="hero__subtitle">Was it Jesus, Confucius, or a fortune cookie? Test your wisdom in this surprisingly tricky quiz game.</p>
+        <div class="hero__cta">
+          <a href="#download" class="btn btn--accent btn--large">Get the App</a>
+          <a href="#how-it-works" class="btn btn--outline btn--large">How It Works</a>
+        </div>
+        <div class="hero__badges" id="download">
+          <a href="#" class="badge" aria-label="Download on the App Store">
+            <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="135" height="40" rx="6" fill="#000"/>
+              <text x="67.5" y="16" text-anchor="middle" fill="#fff" font-size="8" font-family="system-ui, sans-serif">Download on the</text>
+              <text x="67.5" y="29" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="system-ui, sans-serif">App Store</text>
+            </svg>
+          </a>
+          <a href="#" class="badge" aria-label="Get it on Google Play">
+            <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="135" height="40" rx="6" fill="#000"/>
+              <text x="67.5" y="16" text-anchor="middle" fill="#fff" font-size="8" font-family="system-ui, sans-serif">GET IT ON</text>
+              <text x="67.5" y="29" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Google Play</text>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__phone">
+          <div class="phone-mock">
+            <div class="phone-mock__screen">
+              <div class="phone-mock__status-bar">
+                <span>9:41</span>
+                <span>●●●</span>
+              </div>
+              <div class="phone-mock__header">
+                <span class="phone-mock__app-name">Who Said It?</span>
+                <span class="phone-mock__score">Score: 750</span>
+                <span class="phone-mock__label">🔥 5 streak</span>
+              </div>
+              <div class="phone-mock__quote">
+                <p>"The only true wisdom is in knowing you know nothing."</p>
+              </div>
+              <div class="phone-mock__choices">
+                <div class="phone-mock__choice">📖 Bible</div>
+                <div class="phone-mock__choice phone-mock__choice--correct">🏛️ Philosopher</div>
+                <div class="phone-mock__choice">🥠 Fortune Cookie</div>
+              </div>
+              <div class="phone-mock__timer">
+                <div class="phone-mock__timer-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">How It Works</h2>
+        <p class="section-header__subtitle">Simple to play, surprisingly hard to master.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Read the Quote</h3>
+          <p class="step__desc">You'll see a quote — it could be from the Bible, a famous philosopher, or a fortune cookie.</p>
+        </div>
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Guess the Source</h3>
+          <p class="step__desc">Choose who you think said it. Think fast — the timer is ticking and quick answers earn bonus points!</p>
+        </div>
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Learn & Share</h3>
+          <p class="step__desc">See the real source with context and references. Build streaks, beat your high score, and share your results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">Three Sources, One Challenge</h2>
+        <p class="section-header__subtitle">Wisdom transcends time — a fortune cookie might echo Solomon, or Jesus might sound like a modern life coach.</p>
+      </div>
+      <div class="categories__grid">
+        <div class="category-card">
+          <div class="category-card__emoji">📖</div>
+          <h3 class="category-card__title">The Bible</h3>
+          <p class="category-card__desc">Verses from Jesus, Paul, Moses, Solomon, David, and more. 20 carefully selected quotes with full book/chapter/verse references.</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__emoji">🏛️</div>
+          <h3 class="category-card__title">Philosophers</h3>
+          <p class="category-card__desc">Ancient wisdom to modern insights from Socrates, Marcus Aurelius, Rumi, Confucius, and other great thinkers.</p>
+        </div>
+        <div class="category-card">
+          <div class="category-card__emoji">🥠</div>
+          <h3 class="category-card__title">Fortune Cookies</h3>
+          <p class="category-card__desc">Traditional motivational sayings and modern inspirational quotes. Some sound surprisingly profound!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">Game Features</h2>
+        <p class="section-header__subtitle">More than just trivia — it's a test of discernment.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">⏱️</div>
+          <h3 class="feature-card__title">Timer-Based</h3>
+          <p class="feature-card__desc">10 seconds per question keeps the pressure on. Answer in under 3 seconds for a speed bonus!</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🔥</div>
+          <h3 class="feature-card__title">Streak Tracking</h3>
+          <p class="feature-card__desc">Build consecutive correct answer streaks. How long can you keep it going?</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🏆</div>
+          <h3 class="feature-card__title">High Scores</h3>
+          <p class="feature-card__desc">Your best scores are saved locally. Keep coming back to beat your personal best.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📤</div>
+          <h3 class="feature-card__title">Share Results</h3>
+          <p class="feature-card__desc">Challenge your friends by sharing your score. See who really knows their wisdom sources!</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🎨</div>
+          <h3 class="feature-card__title">Beautiful Design</h3>
+          <p class="feature-card__desc">Dark theme with gold accents — inspired by ancient scrolls and candlelit study.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📱</div>
+          <h3 class="feature-card__title">Works Offline</h3>
+          <p class="feature-card__desc">All 52 quotes are stored locally. No internet needed — play anywhere, anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__inner">
+      <h2 class="cta__title">Ready to test your wisdom?</h2>
+      <p class="cta__subtitle">Free to play. No ads. No accounts. Just quotes and your best judgment.</p>
+      <div class="hero__badges">
+        <a href="#" class="badge" aria-label="Download on the App Store">
+          <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="135" height="40" rx="6" fill="#000"/>
+            <text x="67.5" y="16" text-anchor="middle" fill="#fff" font-size="8" font-family="system-ui, sans-serif">Download on the</text>
+            <text x="67.5" y="29" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="system-ui, sans-serif">App Store</text>
+          </svg>
+        </a>
+        <a href="#" class="badge" aria-label="Get it on Google Play">
+          <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="135" height="40" rx="6" fill="#000"/>
+            <text x="67.5" y="16" text-anchor="middle" fill="#fff" font-size="8" font-family="system-ui, sans-serif">GET IT ON</text>
+            <text x="67.5" y="29" text-anchor="middle" fill="#fff" font-size="13" font-weight="600" font-family="system-ui, sans-serif">Google Play</text>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/who-said-it/" class="nav__logo" aria-label="Who Said It? home">
+          <span class="nav__logo-icon">📖</span>
+          <span class="nav__logo-text">Who Said It?</span>
+        </a>
+        <p class="footer__tagline">Bible, philosopher, or fortune cookie?</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4>Game</h4>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#categories">Categories</a>
+          <a href="#download">Download</a>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <a href="/who-said-it/privacy.html">Privacy Policy</a>
+          <a href="/who-said-it/terms.html">Terms of Service</a>
+        </div>
+        <div class="footer__col">
+          <h4>Connect</h4>
+          <a href="mailto:hello@reddoglabs.co">Support</a>
+          <a href="/">Red Dog Labs</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; 2026 Red Dog Labs. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
