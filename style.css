@@ -338,6 +338,19 @@ a.app-card:hover .app-card-link {
   color: var(--red-light);
 }
 
+.app-card-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: linear-gradient(135deg, #f472b6, #a855f7);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
 /* ===== About ===== */
 .about-layout {
   display: grid;
